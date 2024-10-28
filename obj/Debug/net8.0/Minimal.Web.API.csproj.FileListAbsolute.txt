@@ -137,3 +137,9 @@ C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\obj\Debug\net8.0\ref
 C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\obj\Debug\net8.0\Minimal.Web.API.pdb
 C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\obj\Debug\net8.0\Minimal.Web.API.genruntimeconfig.cache
 C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\obj\Debug\net8.0\ref\Minimal.Web.API.dll
+C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\obj\Debug\net8.0\Minimal.Web.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Victo\source\repos\Minimal.Web.API\Minimal.Web.API\obj\Debug\net8.0\Minimal.Web.API.sourcelink.json

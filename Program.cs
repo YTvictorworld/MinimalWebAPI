@@ -1,11 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using Minimal.Web.API;
+using Swashbuckle.AspNetCore.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<TodoDb>(opt => opt.UseInMemoryDatabase("TodoList"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", 
+        new() { Title="Todo API", Version="v1" });
+});
 var app  = builder.Build();
+
 
 app.MapGet("/items", async (TodoDb db) =>
     await db.Todos.ToListAsync()
@@ -51,6 +58,11 @@ app.MapDelete("/items/{id}", async (int id, TodoDb db) =>
 
     return Results.NotFound();
 });
+
+app.UseSwagger();
+app.UseSwaggerUI(c => c.SwaggerEndpoint(
+    "/swagger/v1/swagger.json",
+    "v1"));
 
 app.Run();
 
