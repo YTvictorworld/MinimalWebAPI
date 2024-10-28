@@ -1,0 +1,23 @@
+﻿@Minimal.Web.API_HostAddress = https://localhost:7109
+
+POST {{Minimal.Web.API_HostAddress}}/items
+Content-Type: application/json
+
+{
+  "name": "eat a dog",
+  "isComplete": false
+}
+
+###
+
+GET {{Minimal.Web.API_HostAddress}}/items
+
+###
+
+GET {{Minimal.Web.API_HostAddress}}/items/complete
+
+###
+
+GET {{Minimal.Web.API_HostAddress}}/items/4
+
+###
